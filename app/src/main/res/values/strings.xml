@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoffeeCounselor</string>
+    <string name="coffee_menu">Coffee</string>
+    <string name="beverage_menu">Beverage</string>
+    <string name="tea_menu">Tea</string>
+    <string name="dessert_menu">Dessert</string>
+
+</resources>
