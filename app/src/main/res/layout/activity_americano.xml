@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/coffee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
@@ -22,11 +23,12 @@
             android:textStyle="bold"
             android:layout_weight="3"
             android:text="Title"
+            android:textColor="@color/word"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_weight="1"
-            android:textColor="@color/design_default_color_primary"
+            android:textColor="@color/word"
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -34,6 +36,7 @@
         <TextView
             android:textStyle="bold"
             android:layout_weight="3"
+            android:textColor="@color/word"
             android:text="Price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -47,6 +50,7 @@
         <TextView
             android:textStyle="bold"
             android:layout_weight="3"
+            android:textColor="@color/word"
             android:text="add.Info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -59,6 +63,7 @@
 
         <TextView
             android:textStyle="bold"
+            android:textColor="@color/word"
             android:layout_weight="3"
             android:text="Caffe"
             android:layout_width="match_parent"
@@ -66,7 +71,7 @@
         <TextView
             android:layout_weight="1"
             android:textColor="@color/black"
-            android:id="@+id/txtCaffe"
+            android:id="@+id/txtCafe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -75,6 +80,7 @@
             android:textStyle="bold"
             android:layout_weight="3"
             android:text="Rating"
+            android:textColor="@color/word"
             android:textSize="28sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
