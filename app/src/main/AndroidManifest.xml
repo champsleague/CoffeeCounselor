@@ -3,6 +3,7 @@
     package="com.gachon.coffeecounselor">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    //firebase linked permission
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
