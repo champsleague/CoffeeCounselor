@@ -1,33 +1,21 @@
 package com.gachon.coffeecounselor.activity5;
 
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.os.Looper;
-import android.os.Message;
-import android.support.annotation.NonNull;
-import android.util.Log;
-import android.widget.ImageView;
-import android.widget.RatingBar;
-import android.widget.TextView;
-import android.os.Handler;
-
-
 import com.gachon.coffeecounselor.R;
-import com.squareup.picasso.Picasso;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-
-import com.gachon.coffeecounselor.CoffeeInfo;
-
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class AmericanoActivity extends AppCompatActivity {
 /*

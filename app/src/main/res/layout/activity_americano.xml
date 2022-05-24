@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".activity4.AmericanoActivity">
+    tools:context=".activity5.AmericanoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
