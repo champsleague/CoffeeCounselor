@@ -23,7 +23,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 
-import com.gachon.coffeecounselor.CoffeeInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
