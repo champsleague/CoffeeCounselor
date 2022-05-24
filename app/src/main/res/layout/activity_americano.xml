@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/coffee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".activity4.AmericanoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:text="Title"
+            android:textColor="@color/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/word"
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:textColor="@color/word"
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/design_default_color_secondary"
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:textColor="@color/word"
+            android:text="add.Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/word"
+            android:layout_weight="3"
+            android:text="Caffe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/txtCafe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtRating"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:text="Rating"
+            android:textColor="@color/word"
+            android:textSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
