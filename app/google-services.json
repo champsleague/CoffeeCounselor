@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551224114760",
+    "project_id": "coffeecounselor-841ac",
+    "storage_bucket": "coffeecounselor-841ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551224114760:android:f4f8c15342c5902e5da27d",
+        "android_client_info": {
+          "package_name": "com.gachon.coffeecounselor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551224114760-4ip9orb45m2i4bvoi21527s5ovjpve3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPUiLFE-oRGRe0ptUqaaGMzH-nbpUVDXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551224114760-4ip9orb45m2i4bvoi21527s5ovjpve3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
