@@ -2,10 +2,11 @@ package com.gachon.coffeecounselor.activity4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Looper;
 import android.os.Message;
-import android.support.annotation.NonNull;
+
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -13,8 +14,8 @@ import android.widget.TextView;
 import android.os.Handler;
 
 
+import com.bumptech.glide.Glide;
 import com.gachon.coffeecounselor.R;
-import com.squareup.picasso.Picasso;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -106,9 +107,9 @@ public class AmericanoActivity extends AppCompatActivity {
     };
 }*/
 
-    String nums;                    //복권 번호을 저장할 변수
-    TextView txtTitle, txtPrice, txtInfo, txtCafe, txtRating;
-    String titleTmp, priceTmp, infoTmp,cafeTmp,ratingTmp;
+    TextView txtTitle, imageUrl, txtPrice, txtInfo, txtCafe, txtRating;
+    String titleTmp, imageTmp, priceTmp, infoTmp,cafeTmp,ratingTmp;
+    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +118,7 @@ public class AmericanoActivity extends AppCompatActivity {
 
 
         final Bundle bundle = new Bundle();
-        ImageView img = findViewById(R.id.imgView);
+        img = findViewById(R.id.imgView);
         txtTitle = findViewById(R.id.txtTitle);
         txtPrice = findViewById(R.id.txtPrice);
         txtInfo = findViewById(R.id.txtInfo);
@@ -130,12 +131,13 @@ public class AmericanoActivity extends AppCompatActivity {
             public void run() {
                 Document doc = null;
                 try {
-                    //doc = Jsoup.connect("https://dhlottery.co.kr/common.do?method=main").get();
+                    doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
+
                     //doc = Jsoup.connect("https://www.starbucks.co.kr/menu/drink_view.do?product_cd=9200000002487").get();
-                    Connection.Response response = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1")
-                            .method(Connection.Method.GET)
-                            .execute();
-                    doc = response.parse();
+                    //Connection.Response response = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1")
+                     //       .method(Connection.Method.GET)
+                     //       .execute();
+                   // doc = response.parse();
                    /* Elements image = doc.select("img[class=lz-zoomImg]");
                     List<String> imageUrls = new ArrayList<>();
 
@@ -144,7 +146,9 @@ public class AmericanoActivity extends AppCompatActivity {
                     }
                     System.out.println(imageUrls); // 이미지 URL들.*/
                     Elements title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
+                    Elements image = doc.select("tr#faq0 td table tbody tr td img");
                     titleTmp = title.text();
+                    imageTmp = image.attr("src");
                    /* Elements price = doc.select("");
                     priceTmp = price.text();
                     Elements info = doc.select("p.t1");
@@ -165,6 +169,7 @@ public class AmericanoActivity extends AppCompatActivity {
                     nums += doc.select("#bnusNo").text();                   //보너스 번호 contents 변수를 사용하지 않고 가져오는 방법
 */
                     bundle.putString("title", titleTmp);
+                    bundle.putString("image", imageTmp);
                     /*bundle.putString("price", priceTmp);
                     bundle.putString("info", infoTmp);
                     bundle.putString("cafe", cafeTmp);
@@ -178,17 +183,19 @@ public class AmericanoActivity extends AppCompatActivity {
                 }
             }
         }.start();
+
     }
 
     Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             Bundle bundle = msg.getData();
+            Glide.with(img).load(bundle.getString("image")).into(img);
             txtTitle.setText(bundle.getString("title"));
             //txtPrice.setText(bundle.getString("price]"));
-           // txtInfo.setText(bundle.getString("info"));
-           // txtCafe.setText(bundle.getString("cafe"));
-          //  txtRating.setText(bundle.getString("Rating"));
+            // txtInfo.setText(bundle.getString("info"));
+            // txtCafe.setText(bundle.getString("cafe"));
+            //  txtRating.setText(bundle.getString("Rating"));
         }
     };
 }
