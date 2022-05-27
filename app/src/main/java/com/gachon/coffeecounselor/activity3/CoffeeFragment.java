@@ -8,6 +8,7 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.os.Handler;
 import com.squareup.picasso.Picasso;
@@ -21,7 +22,7 @@ import java.io.IOException;
 
 public class CoffeeFragment extends Fragment {
 
-    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
+    ImageButton i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
     String i1Tmp,i2Tmp,i3Tmp,i4Tmp,i5Tmp,i6Tmp,i7Tmp,i8Tmp,i9Tmp,i10Tmp;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
