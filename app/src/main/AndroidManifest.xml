@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".activity4.AmericanoActivity"
+            android:exported="false" />.activity4.AmericanoActivity
         <activity
             android:name=".activity4.CommentaryActivity"
             android:exported="false" />
@@ -26,7 +26,7 @@
             android:name=".CafeinfoActivity"
             android:exported="false" />
         <activity
-            android:name=".activity4.AmericanoActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
