@@ -400,7 +400,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="tea21"
+                        android:id="@+id/tea21"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
