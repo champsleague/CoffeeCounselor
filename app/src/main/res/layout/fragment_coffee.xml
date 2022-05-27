@@ -93,7 +93,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="Coffee"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"

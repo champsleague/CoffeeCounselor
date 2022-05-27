@@ -28,7 +28,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b1"
+                        android:id="@+id/dea1"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -46,7 +46,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b2"
+                        android:id="@+id/dea2"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -64,7 +64,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b3"
+                        android:id="@+id/dea3"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -84,7 +84,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b4"
+                        android:id="@+id/dea4"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -103,7 +103,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b5"
+                        android:id="@+id/dea5"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -121,63 +121,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b6"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b7"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b8"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b9"
+                        android:id="@+id/dea6"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -197,7 +141,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b10"
+                        android:id="@+id/dea7"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -215,7 +159,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b11"
+                        android:id="@+id/dea8"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -233,63 +177,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b12"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b13"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b14"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b15"
+                        android:id="@+id/dea9"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -309,7 +197,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b16"
+                        android:id="@+id/dea10"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -327,7 +215,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b17"
+                        android:id="@+id/dea11"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -345,63 +233,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b18"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b19"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b20"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/dessert_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b21"
+                        android:id="@+id/dea12"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -421,7 +253,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b22"
+                        android:id="@+id/dea13"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -439,7 +271,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b23"
+                        android:id="@+id/dea14"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -457,7 +289,175 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b24"
+                        android:id="@+id/dea15"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea16"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea17"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea18"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea19"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea20"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea21"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea22"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea23"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea24"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView

@@ -28,7 +28,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b1"
+                        android:id="@+id/tea1"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -46,7 +46,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b2"
+                        android:id="@+id/tea2"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -64,63 +64,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b3"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b4"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b5"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b6"
+                        android:id="@+id/tea3"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -140,7 +84,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b7"
+                        android:id="@+id/tea4"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -158,7 +102,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b8"
+                        android:id="@+id/tea5"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -176,63 +120,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b9"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b10"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b11"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b12"
+                        android:id="@+id/tea6"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -252,7 +140,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b13"
+                        android:id="@+id/tea7"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -270,7 +158,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b14"
+                        android:id="@+id/tea8"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -288,63 +176,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b15"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b16"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b17"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/tea_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b18"
+                        android:id="@+id/tea9"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -364,7 +196,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b19"
+                        android:id="@+id/tea10"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -382,7 +214,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b20"
+                        android:id="@+id/tea11"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -400,7 +232,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b21"
+                        android:id="@+id/tea12"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -420,7 +252,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b22"
+                        android:id="@+id/tea13"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -438,7 +270,7 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b23"
+                        android:id="@+id/tea14"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
@@ -456,7 +288,175 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b24"
+                        android:id="@+id/tea15"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea16"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea17"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea18"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea19"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea20"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="tea21"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea22"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea23"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/tea_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/tea24"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
