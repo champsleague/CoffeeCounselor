@@ -1,5 +1,7 @@
 package com.gachon.coffeecounselor.activity3;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,9 +10,12 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.os.Handler;
+
+import com.gachon.coffeecounselor.CafeinfoActivity;
+import com.gachon.coffeecounselor.activity4.AmericanoActivity;
 import com.squareup.picasso.Picasso;
 import com.gachon.coffeecounselor.R;
 
@@ -22,7 +27,7 @@ import java.io.IOException;
 
 public class CoffeeFragment extends Fragment {
 
-    ImageButton i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
+    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
     String i1Tmp,i2Tmp,i3Tmp,i4Tmp,i5Tmp,i6Tmp,i7Tmp,i8Tmp,i9Tmp,i10Tmp;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,6 +45,14 @@ public class CoffeeFragment extends Fragment {
         i9 = v.findViewById(R.id.b9);
         i10 = v.findViewById(R.id.b10);
 
+        i1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AmericanoActivity.class);
+                intent.putExtra("code",0);
+                startActivity(intent);
+            }
+        });
         new Thread(){
             @Override
             public void run() {
@@ -90,7 +103,7 @@ public class CoffeeFragment extends Fragment {
         }.start();
 
         return v;
-//
+
     }
     Handler handler = new Handler(){
         @Override

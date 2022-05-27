@@ -59,21 +59,26 @@ public class AmericanoActivity extends AppCompatActivity {
                     imgURLTmp = image.attr("src");
                     Elements title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                     titleTmp = title.text();
-                    //Element calorie = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain]");
-                    //calorieTmp = calorie.text();
+                    Elements Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
+                    //List<Element> nutritionsList = new ArrayList<>();
+                    int index = 0;
+                    for(Element nutrition : Nutrition){
+                        //nutritionsList.add(nutrition);
+                        if(index == 6)  calorieTmp = nutrition.text();
+                        if(index ==11)  cafeURLTmp = nutrition.text();
+                        index += 1;
+                    }
                     Element info = doc.select("tr#faq0 td table tbody tr td table tbody tr td[class=text13explain]").first();
                     infoTmp = info.text();
-                    //Element caffeine = doc.select("tr#faq0 td table tbody tr td table tbody tr td[class=text13explain]").last();
-                    //cafeURLTmp = caffeine.attr("src");
 
                     ratingTmp = rate.getRating();
                     String rate = Float.toString(ratingTmp);
 
                     bundle.putString("image", imgURLTmp);
                     bundle.putString("title", titleTmp);
-                    //bundle.putString("calorie", calorieTmp);
+                    bundle.putString("calorie", calorieTmp);
                     bundle.putString("info", infoTmp);
-                    //bundle.putString("caffeine", cafeURLTmp);
+                    bundle.putString("caffeine", cafeURLTmp);
                     bundle.putString("rate", rate);
                     Message msg = handler.obtainMessage();
                     msg.setData(bundle);
@@ -94,10 +99,10 @@ public class AmericanoActivity extends AppCompatActivity {
                     .load(bundle.getString("image"))
                     .into(img);
             txtTitle.setText(bundle.getString("title"));
-            //txtCalorie.setText(bundle.getString("calorie"));
+            txtCalorie.setText(bundle.getString("calorie"));
             txtInfo.setText(bundle.getString("info"));
-            //txtCaffeine.setText(bundle.getString("caffeine"));
-            //txtRating.setText(bundle.getString("rate"));
+            txtCaffeine.setText(bundle.getString("caffeine"));
+            txtRating.setText(bundle.getString("rate"));
         }
     };
 }

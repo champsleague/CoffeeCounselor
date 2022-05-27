@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    // User Info : Age, Gender, Feeling
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="bottom"
+            android:text="SUBMIT" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff993300"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="@string/info"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userImg"></TextView>
+
+    // Age
+
+    <RadioGroup
+        android:id="@+id/userInfo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo">
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFBB86FC"
+            android:text="@string/age"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></TextView>
+
+        <RadioButton
+            android:id="@+id/age1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="~20"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/age2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20~30"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/age3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30~40"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/age4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40~"></RadioButton>
+    </RadioGroup>
+
+    // Gender
+
+    <RadioGroup
+        android:id="@+id/userInfo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfo1">
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFBB86FC"
+            android:text="@string/gender"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></TextView>
+
+        <RadioButton
+            android:id="@+id/gender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/gender2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+    </RadioGroup>
+
+    // Feeling
+
+    <RadioGroup
+        android:id="@+id/userInfo3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfo2">
+
+        <TextView
+            android:id="@+id/txtFeeling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFBB86FC"
+            android:text="@string/feeling"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></TextView>
+
+        <RadioButton
+            android:id="@+id/feeling1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excellent"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/feeling2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/feeling3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gloomy"></RadioButton>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

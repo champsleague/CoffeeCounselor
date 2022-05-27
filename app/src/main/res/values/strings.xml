@@ -4,5 +4,8 @@
     <string name="beverage_menu">Beverage</string>
     <string name="tea_menu">Tea</string>
     <string name="dessert_menu">Dessert</string>
-
+    <string name="info">Please Select User Information</string>
+    <string name="age">Select Age</string>
+    <string name="gender">Select Gender</string>
+    <string name="feeling">Select Your Feeling</string>
 </resources>

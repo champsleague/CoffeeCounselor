@@ -54,23 +54,26 @@
                         android:textSize="20dp"
                         android:text="@string/coffee_menu"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="5dp">
+
                     <ImageButton
+                        android:id="@+id/b3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b3"
                         android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
+                        android:src="@drawable/coffee" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/coffee_menu"
+                        android:textSize="20dp" />
                 </LinearLayout>
             </TableRow>
             <TableRow>

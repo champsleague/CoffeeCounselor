@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button getRecommand = findViewById(R.id.button2);
-        getRecommand.setOnClickListener(new View.OnClickListener() {
+        Button getRecommend = findViewById(R.id.button2);
+        getRecommend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CafeinfoActivity.class);

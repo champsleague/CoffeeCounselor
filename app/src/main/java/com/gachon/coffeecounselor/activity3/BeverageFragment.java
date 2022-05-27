@@ -1,6 +1,5 @@
 package com.gachon.coffeecounselor.activity3;
 
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
