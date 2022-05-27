@@ -89,7 +89,7 @@ public class CoffeeFragment extends Fragment {
         }.start();
 
         return v;
-
+//
     }
     Handler handler = new Handler(){
         @Override
