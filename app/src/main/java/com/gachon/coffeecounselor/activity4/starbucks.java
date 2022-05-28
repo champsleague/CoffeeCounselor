@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AmericanoActivity extends AppCompatActivity {
+public class starbucks extends AppCompatActivity {
 
     ImageView img;
     TextView txtTitle, txtCalorie, txtInfo, txtCaffeine, txtRating;
@@ -38,7 +38,7 @@ public class AmericanoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_americano);
+        setContentView(R.layout.activity_starbucks);
 
         final Bundle bundle = new Bundle();
         img = findViewById(R.id.imgView);
@@ -53,32 +53,27 @@ public class AmericanoActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Document doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
+                    Document doc = Jsoup.connect("https://www.starbucks.co.kr/menu/drink_list.do?CATE_CD=product_cold_brew").get();
 
-                    Elements image = doc.select("tr#faq0 td table tbody tr td img");
+                    Elements image = doc.select("li.menuDataSet dl dt img");
                     imgURLTmp = image.attr("src");
-                    Elements title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
+                    Elements title = doc.select("li.menuDataSet dl dd");
                     titleTmp = title.text();
-                    Elements Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
-                    //List<Element> nutritionsList = new ArrayList<>();
-                    int index = 0;
-                    for(Element nutrition : Nutrition){
-                        //nutritionsList.add(nutrition);
-                        if(index == 6)  calorieTmp = nutrition.text();
-                        if(index ==11)  cafeURLTmp = nutrition.text();
-                        index += 1;
-                    }
+                    //Element calorie = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain]");
+                    //calorieTmp = calorie.text();
                     Element info = doc.select("tr#faq0 td table tbody tr td table tbody tr td[class=text13explain]").first();
                     infoTmp = info.text();
+                    //Element caffeine = doc.select("tr#faq0 td table tbody tr td table tbody tr td[class=text13explain]").last();
+                    //cafeURLTmp = caffeine.attr("src");
 
                     ratingTmp = rate.getRating();
                     String rate = Float.toString(ratingTmp);
 
                     bundle.putString("image", imgURLTmp);
                     bundle.putString("title", titleTmp);
-                    bundle.putString("calorie", calorieTmp);
+                    //bundle.putString("calorie", calorieTmp);
                     bundle.putString("info", infoTmp);
-                    bundle.putString("caffeine", cafeURLTmp);
+                    //bundle.putString("caffeine", cafeURLTmp);
                     bundle.putString("rate", rate);
                     Message msg = handler.obtainMessage();
                     msg.setData(bundle);
@@ -99,10 +94,10 @@ public class AmericanoActivity extends AppCompatActivity {
                     .load(bundle.getString("image"))
                     .into(img);
             txtTitle.setText(bundle.getString("title"));
-            txtCalorie.setText(bundle.getString("calorie"));
+            //txtCalorie.setText(bundle.getString("calorie"));
             txtInfo.setText(bundle.getString("info"));
-            txtCaffeine.setText(bundle.getString("caffeine"));
-//            txtRating.setText(bundle.getString("rate"));
+            //txtCaffeine.setText(bundle.getString("caffeine"));
+            //txtRating.setText(bundle.getString("rate"));
         }
     };
 }
