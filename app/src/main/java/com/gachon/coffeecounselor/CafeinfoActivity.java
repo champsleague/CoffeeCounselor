@@ -25,11 +25,11 @@ public class CafeinfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(code==0) {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, MenuActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, MenuActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, RecommandActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -39,11 +39,11 @@ public class CafeinfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(code==0) {
-                    Intent intent3 = new Intent(CafeinfoActivity.this, MenuActivity.class);
-                    startActivity(intent3);
+                    Intent intent = new Intent(CafeinfoActivity.this, MenuActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, RecommandActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -53,11 +53,11 @@ public class CafeinfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(code==0) {
-                    Intent intent4 = new Intent(CafeinfoActivity.this, MenuActivity.class);
-                    startActivity(intent4);
+                    Intent intent = new Intent(CafeinfoActivity.this, MenuActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, RecommandActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -67,11 +67,11 @@ public class CafeinfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(code==0) {
-                    Intent intent5 = new Intent(CafeinfoActivity.this, MenuActivity.class);
-                    startActivity(intent5);
+                    Intent intent = new Intent(CafeinfoActivity.this, MenuActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, RecommandActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -81,11 +81,11 @@ public class CafeinfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(code==0) {
-                    Intent intent6 = new Intent(CafeinfoActivity.this, MenuActivity.class);
-                    startActivity(intent6);
+                    Intent intent = new Intent(CafeinfoActivity.this, MenuActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent2 = new Intent(CafeinfoActivity.this, RecommandActivity.class);
-                    startActivity(intent2);
+                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    startActivity(intent);
                 }
             }
         });

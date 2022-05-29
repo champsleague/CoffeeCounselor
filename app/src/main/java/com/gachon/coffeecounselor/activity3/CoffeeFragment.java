@@ -1,6 +1,5 @@
 package com.gachon.coffeecounselor.activity3;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,12 +9,10 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.os.Handler;
 
-import com.gachon.coffeecounselor.CafeinfoActivity;
-import com.gachon.coffeecounselor.activity4.AmericanoActivity;
+import com.gachon.coffeecounselor.activity4.MegaCoffeeActivity;
 import com.squareup.picasso.Picasso;
 import com.gachon.coffeecounselor.R;
 
@@ -48,11 +45,84 @@ public class CoffeeFragment extends Fragment {
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AmericanoActivity.class);
-                intent.putExtra("code",0);
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1001);
                 startActivity(intent);
             }
         });
+        i2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1002);
+                startActivity(intent);
+            }
+        });
+        i3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1003);
+                startActivity(intent);
+            }
+        });
+        i4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1004);
+                startActivity(intent);
+            }
+        });
+        i5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1005);
+                startActivity(intent);
+            }
+        });
+        i6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1006);
+                startActivity(intent);
+            }
+        });
+        i7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1007);
+                startActivity(intent);
+            }
+        });
+        i8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1008);
+                startActivity(intent);
+            }
+        });
+        i9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1009);
+                startActivity(intent);
+            }
+        });
+        i10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MegaCoffeeActivity.class);
+                intent.putExtra("code2",1010);
+                startActivity(intent);
+            }
+        });
+
         new Thread(){
             @Override
             public void run() {
@@ -66,18 +136,18 @@ public class CoffeeFragment extends Fragment {
                     i3Tmp = image3.attr("src");
                     Elements image4 = doc.select("tr#faq3 td table tbody tr td img");
                     i4Tmp = image4.attr("src");
-                    Elements image5 = doc.select("tr#faq7 td table tbody tr td img");
-                    i5Tmp = image5.attr("src");
                     Document doc2 = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
-                    Elements image6 = doc2.select("tr#faq0 td table tbody tr td img");
+                    Elements image5 = doc.select("tr#faq0 td table tbody tr td img");
+                    i5Tmp = image5.attr("src");
+                    Elements image6 = doc2.select("tr#faq1 td table tbody tr td img");
                     i6Tmp = image6.attr("src");
-                    Elements image7 = doc2.select("tr#faq1 td table tbody tr td img");
+                    Elements image7 = doc2.select("tr#faq2 td table tbody tr td img");
                     i7Tmp = image7.attr("src");
-                    Elements image8 = doc2.select("tr#faq2 td table tbody tr td img");
+                    Elements image8 = doc2.select("tr#faq3 td table tbody tr td img");
                     i8Tmp = image8.attr("src");
-                    Elements image9 = doc2.select("tr#faq3 td table tbody tr td img");
+                    Elements image9 = doc2.select("tr#faq4 td table tbody tr td img");
                     i9Tmp = image9.attr("src");
-                    Elements image10 = doc2.select("tr#faq4 td table tbody tr td img");
+                    Elements image10 = doc2.select("tr#faq5 td table tbody tr td img");
                     i10Tmp = image10.attr("src");
 
                     bundle.putString("i1",i1Tmp);
