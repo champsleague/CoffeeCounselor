@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.os.Handler;
 
@@ -27,13 +28,19 @@ import java.io.IOException;
 
 public class CoffeeFragment extends Fragment {
 
-    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
+    ImageView[] coffeeArr = new ImageView[12];
+
+    public static final class buttonID {
+        public static final String b1 = "b1";
+    }
+
     String i1Tmp,i2Tmp,i3Tmp,i4Tmp,i5Tmp,i6Tmp,i7Tmp,i8Tmp,i9Tmp,i10Tmp;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_coffee, container, false);
         final Bundle bundle = new Bundle();
+        /*
         i1 = v.findViewById(R.id.b1);
         i2 = v.findViewById(R.id.b2);
         i3 = v.findViewById(R.id.b3);
@@ -44,15 +51,24 @@ public class CoffeeFragment extends Fragment {
         i8 = v.findViewById(R.id.b8);
         i9 = v.findViewById(R.id.b9);
         i10 = v.findViewById(R.id.b10);
+        */
 
-        i1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AmericanoActivity.class);
-                intent.putExtra("code",0);
-                startActivity(intent);
-            }
-        });
+        for(int i=1;i<=12;i++){
+            int resID = getResources().getIdentifier("b1", "buttonID", "com.gachon.coffeecounselor");
+            coffeeArr[i] = (ImageButton) v.findViewById(resID);
+        }
+
+        for(int i=1;i<=12;i++){
+            coffeeArr[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getActivity(), AmericanoActivity.class);
+                    intent.putExtra("code",0);
+                    startActivity(intent);
+                }
+            });
+        }
+
         new Thread(){
             @Override
             public void run() {
