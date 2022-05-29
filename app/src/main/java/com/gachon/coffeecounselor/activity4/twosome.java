@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class starbucks extends AppCompatActivity {
+public class twosome extends AppCompatActivity {
 
     ImageView img;
     TextView txtTitle, txtCalorie, txtInfo, txtCaffeine, txtRating;
@@ -38,7 +38,7 @@ public class starbucks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_starbucks);
+        setContentView(R.layout.activity_twosome);
 
         final Bundle bundle = new Bundle();
         img = findViewById(R.id.imgView);
@@ -53,15 +53,15 @@ public class starbucks extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Document doc = Jsoup.connect("https://www.starbucks.co.kr/menu/drink_list.do?CATE_CD=product_cold_brew").get();
+                    Document doc = Jsoup.connect("https://mo.twosome.co.kr/mn/menuInfoList.do?grtCd=1&pMidCd=01").get();
 
-                    Elements image = doc.select("li.menuDataSet dl dt img");
+                    Elements image = doc.select("ul.ui-goods-list-default col-2 mt-40 li a div.thum-img img");
                     imgURLTmp = image.attr("src");
-                    Elements title = doc.select("li.menuDataSet dl dd");
+                    Elements title = doc.select("ul.ui-goods-list-default col-2 mt-40 li a p.menu-title");
                     titleTmp = title.text();
                     //Element calorie = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain]");
                     //calorieTmp = calorie.text();
-                    Element info = doc.select("li.menuDataSet dl dd").first();
+                    Element info = doc.select("ul.ui-goods-list-default col-2 mt-40 li a p.menu-title").first();
                     infoTmp = info.text();
                     //Element caffeine = doc.select("tr#faq0 td table tbody tr td table tbody tr td[class=text13explain]").last();
                     //cafeURLTmp = caffeine.attr("src");

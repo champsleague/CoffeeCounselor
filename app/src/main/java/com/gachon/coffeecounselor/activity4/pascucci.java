@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class starbucks extends AppCompatActivity {
+public class pascucci extends AppCompatActivity {
 
     ImageView img;
     TextView txtTitle, txtCalorie, txtInfo, txtCaffeine, txtRating;
@@ -38,7 +38,7 @@ public class starbucks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_starbucks);
+        setContentView(R.layout.activity_pascucci);
 
         final Bundle bundle = new Bundle();
         img = findViewById(R.id.imgView);
