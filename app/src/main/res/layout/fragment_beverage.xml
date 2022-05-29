@@ -32,6 +32,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -48,8 +49,9 @@
                         android:layout_height="100dp"
                         android:id="@+id/bev2"
                         android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>a
+                        android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -68,6 +70,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -88,6 +91,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -106,6 +110,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -124,6 +129,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -144,6 +150,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -162,6 +169,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -180,6 +188,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -200,6 +209,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -218,6 +228,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -236,6 +247,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -256,6 +268,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -274,6 +287,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -292,6 +306,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -312,6 +327,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -330,6 +346,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -348,6 +365,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -368,6 +386,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -386,6 +405,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -404,6 +424,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -424,6 +445,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -442,6 +464,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -460,6 +483,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/bev_menu24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"

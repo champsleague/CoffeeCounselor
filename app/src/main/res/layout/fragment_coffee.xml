@@ -31,6 +31,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -49,6 +50,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -70,6 +72,7 @@
                         android:src="@drawable/coffee" />
 
                     <TextView
+                        android:id="@+id/coffee_menu3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/coffee_menu"
@@ -90,6 +93,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -108,6 +112,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -126,6 +131,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -146,6 +152,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -164,6 +171,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -182,6 +190,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -202,6 +211,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -220,6 +230,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -238,6 +249,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -258,6 +270,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -276,6 +289,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -294,6 +308,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -314,6 +329,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -332,6 +348,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -350,6 +367,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -370,6 +388,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -388,6 +407,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -406,6 +426,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -426,6 +447,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -444,6 +466,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -462,6 +485,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
+                        android:id="@+id/coffee_menu24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
