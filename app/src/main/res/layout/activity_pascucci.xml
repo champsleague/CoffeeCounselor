@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="5dp"
     android:id="@+id/a11"
-    tools:context=".activity4.pascucci">
+    tools:context=".activity4.PascucciActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
