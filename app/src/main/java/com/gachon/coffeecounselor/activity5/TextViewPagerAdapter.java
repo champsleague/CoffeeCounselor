@@ -26,7 +26,7 @@ public class TextViewPagerAdapter extends PagerAdapter {
 
         View view = null;
 
-        if(context != null) {
+        /*if(context != null) {
             // LayoutInflater 를 통해 "/res/layout/page.xml" 을 뷰로 생성.
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.page, container, false);
@@ -37,7 +37,7 @@ public class TextViewPagerAdapter extends PagerAdapter {
         }
 
         // 뷰페이저에 추가
-        container.addView(view);
+        container.addView(view);*/
 
         return view;
     }

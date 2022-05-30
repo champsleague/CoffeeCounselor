@@ -47,7 +47,12 @@ public class MenuActivity extends AppCompatActivity {
 
                 }
                 case 4:{ //pascucci
-
+                    VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+                    vpAdapter.addFragment(new PascucciCoffeeFragment(), "coffee");
+                    vpAdapter.addFragment(new  MegaBeverageFragment(), "beverage");
+                    vpAdapter.addFragment(new  MegaTeaFragment(), "tea");
+                    vpAdapter.addFragment(new  MegaDessertFragment(), "dessert");
+                    viewPager.setAdapter(vpAdapter);
                 }
             }
     }

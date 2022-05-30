@@ -49,7 +49,7 @@ public class PascucciActivity extends AppCompatActivity {
         rateBar = (RatingBar) findViewById(R.id.rating_bar);
         //txtRating = findViewById(R.id.txtRating);
         intent = getIntent();
-        int code =  intent.getIntExtra("code2",0);
+        int code =  intent.getIntExtra("code3",0);
 
 
         new Thread(){
@@ -61,9 +61,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case 1001 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = "https://www.caffe-pascucci.co.kr" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -83,9 +83,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1002 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=2] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=2] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -106,9 +106,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1003 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp =  image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=3] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=3] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -128,9 +128,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1004 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp =  image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=632] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=632] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -153,9 +153,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1005 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp =  image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1309] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1309] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq9 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -175,9 +175,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1006 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=19] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=19] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -197,9 +197,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1007 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=18] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=18] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -219,9 +219,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1008 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=17] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=17] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -241,10 +241,10 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1009 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp =image.attr("src");
+                            image = doc.select("div.productWr a.product[data-productseq=6] figure div.proListImg img");
+                            imgURLTmp ="https://www.caffe-pascucci.co.kr/" + image.attr("src");
 
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=6] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq13 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -263,9 +263,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1010 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=15] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=15] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -284,9 +284,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1011 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=14] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=14] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq15 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -305,9 +305,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1012 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=16] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=16] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq16 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -330,9 +330,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1013 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=1310] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=1310] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq17 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -351,9 +351,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1014 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=1068] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=1068] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq18 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -372,9 +372,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1015 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
+                            image = doc.select("div.productWr a.product[data-productseq=28] figure div.proListImg img");
                             imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            title = doc.select("div.productWr a.product[data-productseq=28] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -393,9 +393,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1016 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=27] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=27] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -414,9 +414,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1017 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=26] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=26] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -435,9 +435,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1018 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=25] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=25] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -456,9 +456,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1019 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=24] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=24] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq30 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -477,9 +477,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1020 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=23] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=23] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq31 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -502,9 +502,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1021 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1169] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1169] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq32 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -523,9 +523,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1022 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1168] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1168] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq33 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -544,9 +544,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1023 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=467] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=467] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq34 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -565,9 +565,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1024 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1293] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1293] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq35 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -586,9 +586,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1025 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=466] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=466] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq36 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -607,9 +607,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1026 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1292] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1292] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq37 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -628,9 +628,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1027 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=893] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=893] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq38 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -649,9 +649,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1028 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=1291] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=1291] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq39 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -670,9 +670,9 @@ public class PascucciActivity extends AppCompatActivity {
                         case  1029 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
 
-                            image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
-                            title = doc.select("div.productWr a.product figure figcaption h2");
+                            image = doc.select("div.productWr a.product[data-productseq=469] figure div.proListImg img");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
+                            title = doc.select("div.productWr a.product[data-productseq=469] figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
 //                            //List<Element> nutritionsList = new ArrayList<>();
@@ -695,7 +695,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -716,7 +716,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -737,7 +737,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -758,7 +758,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -779,7 +779,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
@@ -800,7 +800,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
@@ -821,7 +821,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -842,7 +842,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -863,7 +863,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
@@ -884,7 +884,7 @@ public class PascucciActivity extends AppCompatActivity {
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010020").get();
 
                             image = doc.select("div.productWr a.product figure div.proListImg img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "https://www.caffe-pascucci.co.kr/" + image.attr("src");
                             title = doc.select("div.productWr a.product figure figcaption h2");
                             titleTmp = title.text();
 //                            Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");

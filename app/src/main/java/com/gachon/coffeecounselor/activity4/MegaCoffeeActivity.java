@@ -510,6 +510,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/megachoco","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1021 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -531,6 +532,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/icechoco","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1022 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -552,6 +554,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/mintcreamchoco","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1023 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -573,6 +576,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/greentealatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1024 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -594,6 +598,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/milktea","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1025 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -615,6 +620,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/toffeenutlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1026 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -636,6 +642,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/sweetpotatolatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1027 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -657,6 +664,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/grainlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1028 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -699,6 +707,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/blacksugarbubblelatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1030 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
@@ -720,6 +729,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/blacksugarbubblegreentea","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1031 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
@@ -741,6 +751,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/blacksugarbubblemilktea","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1032 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
@@ -762,6 +773,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/blacksugarlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1033 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
@@ -783,6 +795,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/blacksugarmilktea","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1034 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -804,6 +817,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/plainpong","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1035 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -825,6 +839,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/strawberrypong","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1036 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -846,6 +861,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/bananapong","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1037 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -867,6 +883,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cookiefrappe","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1038 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -888,6 +905,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/strawberrycookiefrappe","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1039 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -909,6 +927,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coffeefrappe","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1040 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -930,6 +949,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/unicornfrappe","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1041 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -1014,6 +1034,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/strawberrycheeseholic","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1045 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
@@ -1035,6 +1056,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/strawberryyogurtfrappe","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1046 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu4").get();
