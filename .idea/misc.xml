@@ -21,10 +21,6 @@
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_beverage.xml" value="0.3786231884057971" />
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_coffee.xml" value="0.2" />
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_dessert.xml" value="0.1" />
-        <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_mega_beverage.xml" value="0.20008550662676358" />
-        <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_mega_coffee.xml" value="0.16726233023588277" />
-        <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_mega_dessert.xml" value="0.28331822302810517" />
-        <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_mega_tea.xml" value="0.31765711842667804" />
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_menu_recommand_first.xml" value="0.3786231884057971" />
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_menu_recommand_second.xml" value="0.3786231884057971" />
         <entry key="..\:/Users/HYG/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_menu_recommand_third.xml" value="0.3786231884057971" />
@@ -41,18 +37,24 @@
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_americano.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_cafeinfo.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_commentary.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_ediya.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_main.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_mega_coffee.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_menu.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_pascucci.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_recommand.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/activity_starbucks.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_beverage.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_coffee.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_dessert.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_mega_coffee.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_tea.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_twosome_bevrage.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/fragment_twosome_coffee.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/kwonw/AndroidStudioProjects/CoffeeCounselor/app/src/main/res/layout/page.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_americano.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_ediya.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_mega_coffee.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_pascucci.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_starbucks.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/user/AndroidStudioProjects/coffeecounselor/app/src/main/res/layout/activity_twosome.xml" value="0.2595108695652174" />

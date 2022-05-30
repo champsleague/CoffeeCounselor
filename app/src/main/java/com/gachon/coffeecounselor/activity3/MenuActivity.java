@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.gachon.coffeecounselor.CafeinfoActivity;
 import com.gachon.coffeecounselor.R;
 import com.google.android.material.tabs.TabLayout;
 
@@ -27,13 +28,27 @@ public class MenuActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
             tabLayout.setupWithViewPager(viewPager);
+            switch (CafeinfoActivity.cafe_change){
+                case 0:{ //starbucks
 
-            VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-            vpAdapter.addFragment(new MegaCoffeeFragment(), "coffee");
-            vpAdapter.addFragment(new MegaBeverageFragment(), "beverage");
-            vpAdapter.addFragment(new MegaTeaFragment(), "tea");
-            vpAdapter.addFragment(new MegaDessertFragment(), "dessert");
-            viewPager.setAdapter(vpAdapter);
+                }
+                case 1:{ //twosome
 
+                }
+                case 2:{ //megacoffee
+                    VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+                    vpAdapter.addFragment(new MegaCoffeeFragment(), "coffee");
+                    vpAdapter.addFragment(new MegaBeverageFragment(), "beverage");
+                    vpAdapter.addFragment(new MegaTeaFragment(), "tea");
+                    vpAdapter.addFragment(new MegaDessertFragment(), "dessert");
+                    viewPager.setAdapter(vpAdapter);
+                }
+                case 3:{ //ediya
+
+                }
+                case 4:{ //pascucci
+
+                }
+            }
     }
 }
