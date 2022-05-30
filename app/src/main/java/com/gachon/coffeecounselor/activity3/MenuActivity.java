@@ -6,11 +6,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.gachon.coffeecounselor.R;
-import com.gachon.coffeecounselor.activity3.BeverageFragment;
-import com.gachon.coffeecounselor.activity3.CoffeeFragment;
-import com.gachon.coffeecounselor.activity3.DessertFragment;
-import com.gachon.coffeecounselor.activity3.TeaFragment;
-import com.gachon.coffeecounselor.activity3.VPAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import android.os.Bundle;
@@ -34,8 +29,8 @@ public class MenuActivity extends AppCompatActivity {
             tabLayout.setupWithViewPager(viewPager);
 
             VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-            vpAdapter.addFragment(new CoffeeFragment(), "coffee");
-            vpAdapter.addFragment(new BeverageFragment(), "beverage");
+            vpAdapter.addFragment(new MegaCoffeeFragment(), "coffee");
+            vpAdapter.addFragment(new MegaBeverageFragment(), "beverage");
             vpAdapter.addFragment(new TeaFragment(), "tea");
             vpAdapter.addFragment(new DessertFragment(), "dessert");
             viewPager.setAdapter(vpAdapter);

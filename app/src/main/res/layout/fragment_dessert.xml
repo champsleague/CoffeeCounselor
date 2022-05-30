@@ -89,7 +89,8 @@
                         android:layout_height="100dp"
                         android:id="@+id/dea4"
                         android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
+                        android:src="@drawable/coffee"
+                        />
                     <TextView
                         android:id="@+id/des_menu4"
                         android:layout_width="wrap_content"

@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity3.CoffeeFragment">
+    tools:context=".activity3.MegaBeverageFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,15 +28,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b1"
+                        android:id="@+id/bev1"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu1"
+                        android:id="@+id/bev_menu1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -46,37 +47,34 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b2"
+                        android:id="@+id/bev2"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu2"
+                        android:id="@+id/bev_menu2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="5dp">
-
                     <ImageButton
-                        android:id="@+id/b3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:id="@+id/bev3"
                         android:scaleType="fitXY"
-                        android:src="@drawable/coffee" />
-
+                        android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu3"
+                        android:id="@+id/bev_menu3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/coffee_menu"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
             <TableRow>
@@ -89,15 +87,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b4"
+                        android:id="@+id/bev4"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu4"
+                        android:id="@+id/bev_menu4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="Coffee"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -108,15 +106,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b5"
+                        android:id="@+id/bev5"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu5"
+                        android:id="@+id/bev_menu5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -127,74 +125,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b6"
+                        android:id="@+id/bev6"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu6"
+                        android:id="@+id/bev_menu6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b7"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b8"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b9"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
             <TableRow>
@@ -207,15 +146,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b10"
+                        android:id="@+id/bev7"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu10"
+                        android:id="@+id/bev_menu7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -226,15 +165,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b11"
+                        android:id="@+id/bev8"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu11"
+                        android:id="@+id/bev_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -245,74 +184,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b12"
+                        android:id="@+id/bev9"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu12"
+                        android:id="@+id/bev_menu9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b13"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b14"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b15"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
             <TableRow>
@@ -325,15 +205,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b16"
+                        android:id="@+id/bev10"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu16"
+                        android:id="@+id/bev_menu10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -344,15 +224,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b17"
+                        android:id="@+id/bev11"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu17"
+                        android:id="@+id/bev_menu11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -363,74 +243,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b18"
+                        android:id="@+id/bev12"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu18"
+                        android:id="@+id/bev_menu12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-            </TableRow>
-            <TableRow>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b19"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b20"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/b21"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coffee"/>
-                    <TextView
-                        android:id="@+id/coffee_menu21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
             <TableRow>
@@ -443,15 +264,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b22"
+                        android:id="@+id/bev13"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu22"
+                        android:id="@+id/bev_menu13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -462,15 +283,15 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b23"
+                        android:id="@+id/bev14"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu23"
+                        android:id="@+id/bev_menu14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -481,20 +302,197 @@
                     <ImageButton
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/b24"
+                        android:id="@+id/bev15"
                         android:scaleType="fitXY"
                         android:src="@drawable/coffee"/>
                     <TextView
-                        android:id="@+id/coffee_menu24"
+                        android:id="@+id/bev_menu15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:text="@string/coffee_menu"/>
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev16"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev17"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev18"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev19"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev20"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev21"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev22"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev23"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev24"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
         </TableLayout>
 
     </ScrollView>
 
-</FrameLayout>
 
+</FrameLayout>
