@@ -35,7 +35,9 @@
                         android:id="@+id/bev_menu1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -54,7 +56,9 @@
                         android:id="@+id/bev_menu2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -73,7 +77,9 @@
                         android:id="@+id/bev_menu3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -94,7 +100,9 @@
                         android:id="@+id/bev_menu4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -113,7 +121,9 @@
                         android:id="@+id/bev_menu5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -132,7 +142,9 @@
                         android:id="@+id/bev_menu6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -153,7 +165,9 @@
                         android:id="@+id/bev_menu7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -172,7 +186,9 @@
                         android:id="@+id/bev_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -191,7 +207,9 @@
                         android:id="@+id/bev_menu9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -212,7 +230,9 @@
                         android:id="@+id/bev_menu10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -231,7 +251,9 @@
                         android:id="@+id/bev_menu11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -250,7 +272,9 @@
                         android:id="@+id/bev_menu12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -271,7 +295,9 @@
                         android:id="@+id/bev_menu13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -290,7 +316,9 @@
                         android:id="@+id/bev_menu14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -309,7 +337,9 @@
                         android:id="@+id/bev_menu15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -330,7 +360,9 @@
                         android:id="@+id/bev_menu16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -349,7 +381,9 @@
                         android:id="@+id/bev_menu17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -368,7 +402,9 @@
                         android:id="@+id/bev_menu18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -389,7 +425,9 @@
                         android:id="@+id/bev_menu19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -408,7 +446,9 @@
                         android:id="@+id/bev_menu20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -427,7 +467,9 @@
                         android:id="@+id/bev_menu21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -448,7 +490,9 @@
                         android:id="@+id/bev_menu22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -467,7 +511,9 @@
                         android:id="@+id/bev_menu23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -486,8 +532,405 @@
                         android:id="@+id/bev_menu24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev25"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev26"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev27"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev28"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev29"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev30"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev31"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev32"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev33"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev34"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev35"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev36"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev37"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev38"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev39"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev40"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev41"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bev42"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/bev_menu42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/beverage_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_height="300dp">
                 </LinearLayout>
             </TableRow>
         </TableLayout>

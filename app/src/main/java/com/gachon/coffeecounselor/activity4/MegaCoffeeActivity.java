@@ -25,16 +25,15 @@ import java.io.IOException;
 
 public class MegaCoffeeActivity extends AppCompatActivity {
     Intent intent;
-    ImageView img;
+    ImageView img,recipe;
     TextView txtTitle, txtCalorie, txtInfo, txtCaffeine, txtRating;
     RatingBar rateBar;
-    String imgURLTmp, titleTmp, calorieTmp, infoTmp, cafeURLTmp;
+    String imgURLTmp, titleTmp, calorieTmp, infoTmp, cafeURLTmp, rate;
     float ratingTmp;
-    String rate;
     Document doc;
     Elements image, title, Nutrition;
     Element info;
-    int index;
+    int index, recipeTmp = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +41,8 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
         final Bundle bundle = new Bundle();
         img = findViewById(R.id.imgView);
+        img.setClipToOutline(true);
+        recipe = findViewById(R.id.recipe);
         txtTitle = findViewById(R.id.txtTitle);
         txtCalorie = findViewById(R.id.txtCalorie);
         txtInfo = findViewById(R.id.txtInfo);
@@ -79,6 +80,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1002 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
@@ -101,6 +103,8 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
+
                             break;
 
                         case  1003 :
@@ -124,6 +128,8 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/hazelnutamericano","drawable", "com.gachon.coffeecounselor");
+
                             break;
                         case  1004 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
@@ -146,6 +152,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/vanillaamericano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1005 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
@@ -168,6 +175,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/honeyamericano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1006 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -190,6 +198,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cubelatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1007 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -212,6 +221,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafelatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1008 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -234,6 +244,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cappuccino","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1009 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -256,6 +267,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/vanillalatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1010 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -277,6 +289,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/hazelnutlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1011 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -298,6 +311,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/caramelmacchiato","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1012 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -319,12 +333,13 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafemocha","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1013 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq17 td table tbody tr td img");
-                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
+                            imgURLTmp =  image.attr("src");
                             title = doc.select("tr#faq17 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq17 td table tbody tr td table tr[class=text13explain] td");
@@ -340,6 +355,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/mintcafemocha","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1014 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
@@ -361,6 +377,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/tiramisulatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1015 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu9").get();
@@ -382,12 +399,13 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrew","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1016 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu9").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -403,12 +421,13 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrewlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1017 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu9").get();
 
                             image = doc.select("tr#faq4 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" +image.attr("src");
                             title = doc.select("tr#faq4 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -424,12 +443,13 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/decaffeinated","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1018 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu9").get();
 
                             image = doc.select("tr#faq6 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq6 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
@@ -445,6 +465,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/decaffeinatedlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         //coffee 끝
                         //beverage
@@ -452,7 +473,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq30 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq30 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq30 td table tbody tr td table tr[class=text13explain] td");
@@ -473,7 +494,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq31 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq31 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq31 td table tbody tr td table tr[class=text13explain] td");
@@ -494,7 +515,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq32 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq32 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq32 td table tbody tr td table tr[class=text13explain] td");
@@ -515,7 +536,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq33 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq33 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq33 td table tbody tr td table tr[class=text13explain] td");
@@ -557,7 +578,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq35 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq35 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq35 td table tbody tr td table tr[class=text13explain] td");
@@ -578,7 +599,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq36 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq36 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq36 td table tbody tr td table tr[class=text13explain] td");
@@ -599,7 +620,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq37 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq37 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq37 td table tbody tr td table tr[class=text13explain] td");
@@ -620,7 +641,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq38 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq38 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq38 td table tbody tr td table tr[class=text13explain] td");
@@ -641,7 +662,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
 
                             image = doc.select("tr#faq39 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq39 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq39 td table tbody tr td table tr[class=text13explain] td");
@@ -662,7 +683,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
 
                             image = doc.select("tr#faq0 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
@@ -683,7 +704,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
 
                             image = doc.select("tr#faq1 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq1 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -704,7 +725,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -725,7 +746,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
 
                             image = doc.select("tr#faq3 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq3 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -746,7 +767,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu11").get();
 
                             image = doc.select("tr#faq4 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq4 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -767,7 +788,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq11 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq11 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
@@ -788,7 +809,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq12 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq12 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
@@ -809,7 +830,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq7 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq7 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -830,7 +851,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq3 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq3 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -851,7 +872,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq10 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq10 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
@@ -872,7 +893,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq14 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq14 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");
@@ -914,7 +935,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq0 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
@@ -935,7 +956,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -956,7 +977,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq1 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq1 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -977,7 +998,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq8 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp =  image.attr("src");
                             title = doc.select("tr#faq8 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -998,7 +1019,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu6").get();
 
                             image = doc.select("tr#faq13 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq13 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq13 td table tbody tr td table tr[class=text13explain] td");
@@ -1019,7 +1040,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu4").get();
 
                             image = doc.select("tr#faq0 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
@@ -1040,7 +1061,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu4").get();
 
                             image = doc.select("tr#faq1 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" +image.attr("src");
                             title = doc.select("tr#faq1 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -1061,7 +1082,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu4").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -1082,7 +1103,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu4").get();
 
                             image = doc.select("tr#faq3 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq3 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -1103,7 +1124,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -1124,7 +1145,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq3 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq3 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -1145,7 +1166,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq4 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq4 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -1166,7 +1187,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq8 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq8 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -1187,7 +1208,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq9 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq9 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq9 td table tbody tr td table tr[class=text13explain] td");
@@ -1208,7 +1229,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq0 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
@@ -1229,7 +1250,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq1 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq1 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -1271,7 +1292,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq5 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq5 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
@@ -1292,7 +1313,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq7 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq7 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -1313,7 +1334,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu5").get();
 
                             image = doc.select("tr#faq6 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq6 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
@@ -1336,7 +1357,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq11 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq11 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
@@ -1357,7 +1378,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq12 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq12 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
@@ -1378,7 +1399,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq21 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq21 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq21 td table tbody tr td table tr[class=text13explain] td");
@@ -1399,7 +1420,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq14 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq14 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");
@@ -1420,7 +1441,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq22 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq22 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq22 td table tbody tr td table tr[class=text13explain] td");
@@ -1441,7 +1462,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq10 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq10 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
@@ -1462,7 +1483,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq13 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq13 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq13 td table tbody tr td table tr[class=text13explain] td");
@@ -1483,7 +1504,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq20 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq20 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq20 td table tbody tr td table tr[class=text13explain] td");
@@ -1504,7 +1525,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq23 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq23 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq23 td table tbody tr td table tr[class=text13explain] td");
@@ -1525,7 +1546,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq24 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq24 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq24 td table tbody tr td table tr[class=text13explain] td");
@@ -1546,7 +1567,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu3").get();
 
                             image = doc.select("tr#faq25 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq25 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq25 td table tbody tr td table tr[class=text13explain] td");
@@ -1569,7 +1590,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq21 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq21 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq21 td table tbody tr td table tr[class=text13explain] td");
@@ -1590,7 +1611,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq22 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq22 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq22 td table tbody tr td table tr[class=text13explain] td");
@@ -1611,7 +1632,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq23 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq23 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq23 td table tbody tr td table tr[class=text13explain] td");
@@ -1632,7 +1653,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq6 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq6 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
@@ -1653,7 +1674,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq7 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq7 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -1674,7 +1695,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq8 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq8 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -1695,7 +1716,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq18 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq18 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq18 td table tbody tr td table tr[class=text13explain] td");
@@ -1716,7 +1737,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq19 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq19 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq19 td table tbody tr td table tr[class=text13explain] td");
@@ -1737,7 +1758,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq20 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq20 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq20 td table tbody tr td table tr[class=text13explain] td");
@@ -1758,7 +1779,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq11 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq11 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
@@ -1779,7 +1800,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq3 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq3 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -1800,7 +1821,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq4 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq4 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -1821,7 +1842,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq5 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq5 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
@@ -1863,7 +1884,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq12 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq12 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
@@ -1905,7 +1926,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq16 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq16 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq16 td table tbody tr td table tr[class=text13explain] td");
@@ -1926,7 +1947,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq17 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq17 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq17 td table tbody tr td table tr[class=text13explain] td");
@@ -1947,7 +1968,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq24 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq24 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq24 td table tbody tr td table tr[class=text13explain] td");
@@ -1968,7 +1989,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq0 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq0 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
@@ -1989,7 +2010,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq1 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq1 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -2010,7 +2031,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq2 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq2 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -2031,7 +2052,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq13 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq13 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq13 td table tbody tr td table tr[class=text13explain] td");
@@ -2052,7 +2073,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq14 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq14 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");
@@ -2073,7 +2094,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq15 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq15 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq15 td table tbody tr td table tr[class=text13explain] td");
@@ -2094,7 +2115,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq25 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq25 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq25 td table tbody tr td table tr[class=text13explain] td");
@@ -2115,7 +2136,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq26 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq26 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq26 td table tbody tr td table tr[class=text13explain] td");
@@ -2136,7 +2157,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq27 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq27 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq27 td table tbody tr td table tr[class=text13explain] td");
@@ -2157,7 +2178,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq28 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq28 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq28 td table tbody tr td table tr[class=text13explain] td");
@@ -2178,7 +2199,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq29 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq29 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq29 td table tbody tr td table tr[class=text13explain] td");
@@ -2199,7 +2220,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq30 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq30 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq30 td table tbody tr td table tr[class=text13explain] td");
@@ -2220,7 +2241,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq31 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq31 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq31 td table tbody tr td table tr[class=text13explain] td");
@@ -2241,7 +2262,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq32 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq32 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq32 td table tbody tr td table tr[class=text13explain] td");
@@ -2262,7 +2283,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq33 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq33 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq33 td table tbody tr td table tr[class=text13explain] td");
@@ -2283,7 +2304,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq34 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq34 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq34 td table tbody tr td table tr[class=text13explain] td");
@@ -2304,7 +2325,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq35 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq35 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq35 td table tbody tr td table tr[class=text13explain] td");
@@ -2325,7 +2346,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq36 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq36 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq36 td table tbody tr td table tr[class=text13explain] td");
@@ -2346,7 +2367,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu7").get();
 
                             image = doc.select("tr#faq37 td table tbody tr td img");
-                            imgURLTmp = image.attr("src");
+                            imgURLTmp = "http://www.megacoffee.me" + image.attr("src");
                             title = doc.select("tr#faq37 td table tbody tr td table tbody tr td strong");
                             titleTmp = title.text();
                             Nutrition = doc.select("tr#faq37 td table tbody tr td table tr[class=text13explain] td");
@@ -2385,6 +2406,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                     bundle.putString("info", infoTmp);
                     bundle.putString("caffeine", cafeURLTmp);
                     bundle.putString("rate", rate);
+                    bundle.putInt("recipe",recipeTmp);
                     Message msg = handler.obtainMessage();
                     msg.setData(bundle);
                     handler.sendMessage(msg);
@@ -2405,6 +2427,9 @@ public class MegaCoffeeActivity extends AppCompatActivity {
             Picasso.get()
                     .load(bundle.getString("image"))
                     .into(img);
+            Picasso.get()
+                    .load(bundle.getInt("recipe"))
+                    .into(recipe);
             txtTitle.setText(bundle.getString("title"));
             txtCalorie.setText(bundle.getString("calorie"));
             txtInfo.setText(bundle.getString("info"));

@@ -31,8 +31,8 @@ public class MenuActivity extends AppCompatActivity {
             VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
             vpAdapter.addFragment(new MegaCoffeeFragment(), "coffee");
             vpAdapter.addFragment(new MegaBeverageFragment(), "beverage");
-            vpAdapter.addFragment(new TeaFragment(), "tea");
-            vpAdapter.addFragment(new DessertFragment(), "dessert");
+            vpAdapter.addFragment(new MegaTeaFragment(), "tea");
+            vpAdapter.addFragment(new MegaDessertFragment(), "dessert");
             viewPager.setAdapter(vpAdapter);
 
     }

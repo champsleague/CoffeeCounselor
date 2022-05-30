@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity3.DessertFragment">
+    tools:context=".activity3.MegaDessertFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -35,7 +35,9 @@
                         android:id="@+id/des_menu1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -54,7 +56,9 @@
                         android:id="@+id/des_menu2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -73,7 +77,9 @@
                         android:id="@+id/des_menu3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -95,7 +101,9 @@
                         android:id="@+id/des_menu4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
 
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
@@ -115,7 +123,9 @@
                         android:id="@+id/des_menu5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -134,7 +144,9 @@
                         android:id="@+id/des_menu6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -155,7 +167,9 @@
                         android:id="@+id/des_menu7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -174,7 +188,9 @@
                         android:id="@+id/des_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -193,7 +209,9 @@
                         android:id="@+id/des_menu9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -214,7 +232,9 @@
                         android:id="@+id/des_menu10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -233,7 +253,9 @@
                         android:id="@+id/des_menu11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -252,7 +274,9 @@
                         android:id="@+id/des_menu12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -273,7 +297,9 @@
                         android:id="@+id/des_menu13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -292,7 +318,9 @@
                         android:id="@+id/des_menu14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -311,7 +339,9 @@
                         android:id="@+id/des_menu15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -332,7 +362,9 @@
                         android:id="@+id/des_menu16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -351,7 +383,9 @@
                         android:id="@+id/des_menu17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -370,7 +404,9 @@
                         android:id="@+id/des_menu18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -391,7 +427,9 @@
                         android:id="@+id/des_menu19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -410,7 +448,9 @@
                         android:id="@+id/des_menu20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -429,7 +469,9 @@
                         android:id="@+id/des_menu21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
             </TableRow>
@@ -450,7 +492,9 @@
                         android:id="@+id/des_menu22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -469,7 +513,9 @@
                         android:id="@+id/des_menu23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
                 </LinearLayout>
                 <LinearLayout
@@ -488,8 +534,319 @@
                         android:id="@+id/des_menu24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
                         android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea25"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea26"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea27"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea28"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea29"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea30"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea31"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea32"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea33"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea34"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea35"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu35"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea36"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu36"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea37"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu37"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/dea38"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coffee"/>
+                    <TextView
+                        android:id="@+id/des_menu38"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe24shiningstar"
+                        android:textColor="@color/word"
+                        android:textSize="19dp"
+                        android:text="@string/dessert_menu"/>
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_height="300dp">
                 </LinearLayout>
             </TableRow>
         </TableLayout>
