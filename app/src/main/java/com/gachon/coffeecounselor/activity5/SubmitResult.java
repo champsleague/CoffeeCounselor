@@ -74,14 +74,29 @@ public class SubmitResult extends AppCompatActivity {
     int userCaffeine = bundle1.getInt("caffeine");
 
 
-    Document doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
-    Elements Nutritions = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
-    int index = 0;
+    Document doc;
+    Elements Nutritions;
+    int index;
     String sugarTmp, caffeineTmp;
-    for(Element nutrition : Nutritions){
-        if(index == 8)  sugarTmp = nutrition.text();
-        if(index ==11)  caffeineTmp = nutrition.text();
-        index += 1;
+    try{
+        doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
+        Nutritions = doc.select("tr#faq0 td table tbody tr td table tr[class=text13explain] td");
+        index = 0;
+        for(Element nutrition : Nutritions){
+            if(index == 8)  sugarTmp = nutrition.text();
+            if(index ==11)  caffeineTmp = nutrition.text();
+            index += 1;
+        }
+
+        Nutritions = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
+        index = 0;
+        for(Element nutrition : Nutritions){
+            if(index == 8)  sugarTmp = nutrition.text();
+            if(index ==11)  caffeineTmp = nutrition.text();
+            index += 1;
+        }
+    } catch (IOException e){
+        e.printStackTrace();
     }
 
 
