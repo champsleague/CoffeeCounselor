@@ -384,6 +384,10 @@ public class SubmitResult extends AppCompatActivity {
                 {
                         // on below line we are adding a new
                         // data point to our Data Point class.
+
+                        // save points to python dataframe (via excel if we can),
+                        // find centroids of each cluster using k-means clustering
+                        // and find the nearest cluster from user dot using distance measures.
                         new DataPoint(Integer.parseInt(sugarTmp[0]), Integer.parseInt(caffeineTmp[0])),
                         new DataPoint(Integer.parseInt(sugarTmp[1]), Integer.parseInt(caffeineTmp[1])),
                         new DataPoint(Integer.parseInt(sugarTmp[2]), Integer.parseInt(caffeineTmp[2])),
