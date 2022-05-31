@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.gachon.coffeecounselor.activity3.MenuActivity;
-import com.gachon.coffeecounselor.activity5.RecommandActivity;
+import com.gachon.coffeecounselor.activity5.Recommendation;
 
 public class CafeinfoActivity extends AppCompatActivity {
     Intent intent;
@@ -30,7 +30,7 @@ public class CafeinfoActivity extends AppCompatActivity {
                     startActivity(intent);
                     cafe_change=0;
                 } else {
-                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    Intent intent = new Intent(CafeinfoActivity.this, Recommendation.class);
                     startActivity(intent);
                 }
             }
@@ -45,7 +45,7 @@ public class CafeinfoActivity extends AppCompatActivity {
                     startActivity(intent);
                     cafe_change=1;
                 } else {
-                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    Intent intent = new Intent(CafeinfoActivity.this, Recommendation.class);
                     startActivity(intent);
                 }
             }
@@ -60,7 +60,7 @@ public class CafeinfoActivity extends AppCompatActivity {
                     startActivity(intent);
                     cafe_change=2;
                 } else {
-                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    Intent intent = new Intent(CafeinfoActivity.this, Recommendation.class);
                     startActivity(intent);
                 }
             }
@@ -75,7 +75,7 @@ public class CafeinfoActivity extends AppCompatActivity {
                     startActivity(intent);
                     cafe_change=3;
                 } else {
-                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    Intent intent = new Intent(CafeinfoActivity.this, Recommendation.class);
                     startActivity(intent);
                 }
             }
@@ -90,7 +90,7 @@ public class CafeinfoActivity extends AppCompatActivity {
                     startActivity(intent);
                     cafe_change=4;
                 } else {
-                    Intent intent = new Intent(CafeinfoActivity.this, RecommandActivity.class);
+                    Intent intent = new Intent(CafeinfoActivity.this, Recommendation.class);
                     startActivity(intent);
                 }
             }

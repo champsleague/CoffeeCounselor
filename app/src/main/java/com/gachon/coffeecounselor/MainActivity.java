@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.gachon.coffeecounselor.activity5.Recommendation;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         getRecommend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CafeinfoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Recommendation.class);
                 intent.putExtra("code",1);
                 startActivity(intent);
             }

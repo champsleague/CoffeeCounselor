@@ -22,9 +22,6 @@
             android:name=".activity4.CommentaryActivity"
             android:exported="false" />
         <activity
-            android:name=".activity5.RecommandActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity3.MenuActivity"
             android:exported="false" />
         <activity
