@@ -1,5 +1,6 @@
 package com.gachon.coffeecounselor.activity5;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +10,18 @@ import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.PointsGraphSeries;
 import com.gachon.coffeecounselor.R;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+
 public class SubmitResult extends AppCompatActivity {
+
+    public SubmitResult() throws IOException {
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,12 +68,31 @@ public class SubmitResult extends AppCompatActivity {
         series.setColor(R.color.purple_200);
     }
 
+    Intent intent = getIntent();
+    Bundle bundle1 = intent.getExtras();
+    int userSugar = bundle1.getInt("sugar");
+    int userCaffeine = bundle1.getInt("caffeine");
+
+
+    Document doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu1").get();
+    Elements Nutritions = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
+    int index = 0;
+    String sugarTmp, caffeineTmp;
+    for(Element nutrition : Nutritions){
+        if(index == 8)  sugarTmp = nutrition.text();
+        if(index ==11)  caffeineTmp = nutrition.text();
+        index += 1;
+    }
+
+
+
     private DataPoint[] getDataPoint() {
         // creating a variable for data point.
         DataPoint[] dataPoints = new DataPoint[]
                 {
                         // on below line we are adding a new
                         // data point to our Data Point class.
+                        new DataPoint(userSugar, userCaffeine),
                         new DataPoint(0, 1),
                         new DataPoint(1, 2),
                         new DataPoint(2, 3),
