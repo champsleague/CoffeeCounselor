@@ -5,6 +5,20 @@ plugins {
 android {
     compileSdk 32
 
+    sourceSets{
+        main{
+            java{
+                //exclude '**/Recommendation.java'
+                //exclude '**/PascucciBeverageFragment.java'
+                //exclude '**/PascucciCoffeeFragment.java'
+                //exclude '**/PascucciDessertFragment.java'
+                //exclude '**/PascucciTeaFragment.java'
+                //exclude '**/SubmitResult.java'
+            }
+        }
+    }
+
+
     defaultConfig {
         applicationId "com.gachon.coffeecounselor"
         minSdk 21

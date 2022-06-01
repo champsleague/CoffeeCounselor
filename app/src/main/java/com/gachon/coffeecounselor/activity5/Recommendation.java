@@ -86,11 +86,13 @@ public class Recommendation extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /*
                 Intent intent = new Intent(getApplicationContext(), SubmitResult.class);
                 Bundle bundle1 = new Bundle();
                 bundle1.putInt("sugar", sugar);
                 bundle1.putInt("caffeine", caffeine);
                 intent.putExtras(bundle1);
+                */
             }
         });
 
