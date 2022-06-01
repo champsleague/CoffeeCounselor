@@ -25,7 +25,7 @@ import java.io.IOException;
 
 public class PascucciActivity extends AppCompatActivity {
     Intent intent;
-    ImageView img;
+    ImageView img, recipe;
     TextView txtTitle, txtCalorie, txtInfo, txtCaffeine, txtRating;
     RatingBar rateBar;
     String imgURLTmp, titleTmp, calorieTmp, infoTmp, cafeURLTmp;
@@ -34,14 +34,17 @@ public class PascucciActivity extends AppCompatActivity {
     Document doc;
     Elements image, title, Nutrition;
     Element info;
-    int index;
+    int index, recipeTmp =1 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pascucci);
 
         final Bundle bundle = new Bundle();
+
         img = findViewById(R.id.imgView);
+        img.setClipToOutline(true);
+        recipe = findViewById(R.id.recipe);
         txtTitle = findViewById(R.id.txtTitle);
         txtCalorie = findViewById(R.id.txtCalorie);
         txtInfo = findViewById(R.id.txtInfo);
@@ -79,6 +82,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/espresso","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1002 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
@@ -101,6 +105,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/espressodoppio","drawable", "com.gachon.coffeecounselor");
                             break;
 
                         case  1003 :
@@ -124,6 +129,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/espressomacchiato","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1004 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00010010").get();
@@ -146,6 +152,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/affogato","drawable", "com.gachon.coffeecounselor");
                             break;
 
 
@@ -171,6 +178,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/oatlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1006 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -193,6 +201,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1007 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -215,6 +224,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1008 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -237,6 +247,7 @@ public class PascucciActivity extends AppCompatActivity {
 
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafelatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1009 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -259,6 +270,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cappuccino","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1010 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -280,6 +292,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/caramelmacchiato","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1011 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -301,6 +314,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/vanillalatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1012 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100020").get();
@@ -322,6 +336,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafemocha","drawable", "com.gachon.coffeecounselor");
                             break;
 
 
@@ -347,6 +362,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/oatlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1014 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -368,6 +384,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/creamcoffee","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1015 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -389,6 +406,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1016 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -410,6 +428,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/americano","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1017 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -431,6 +450,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafelatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1018 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -452,6 +472,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/caramelmacchiato","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1019 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -473,6 +494,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/vanillalatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1020 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100030").get();
@@ -494,6 +516,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/cafemocha","drawable", "com.gachon.coffeecounselor");
                             break;
 
 
@@ -519,6 +542,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrewlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1022 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -540,6 +564,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrew","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1023 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -561,6 +586,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrew","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1024 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -582,6 +608,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/decaffeinated","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1025 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -603,6 +630,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/coldbrewlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1026 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -624,6 +652,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/decaffeinatedlatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1027 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -645,6 +674,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/milkycoldbrewfloat","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1028 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -666,6 +696,7 @@ public class PascucciActivity extends AppCompatActivity {
 //                            infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/decaffeinatedmilky","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1029 :
                             doc = Jsoup.connect("https://www.caffe-pascucci.co.kr/product/productList.asp?typeCode=00100040").get();
@@ -1809,6 +1840,7 @@ public class PascucciActivity extends AppCompatActivity {
                     bundle.putString("info", infoTmp);
                     bundle.putString("caffeine", cafeURLTmp);
                     bundle.putString("rate", rate);
+                    bundle.putInt("recipe",recipeTmp);
                     Message msg = handler.obtainMessage();
                     msg.setData(bundle);
                     handler.sendMessage(msg);
@@ -1829,6 +1861,9 @@ public class PascucciActivity extends AppCompatActivity {
             Picasso.get()
                     .load(bundle.getString("image"))
                     .into(img);
+            Picasso.get()
+                    .load(bundle.getInt("recipe"))
+                    .into(recipe);
             txtTitle.setText(bundle.getString("title"));
             txtCalorie.setText(bundle.getString("calorie"));
             txtInfo.setText(bundle.getString("info"));

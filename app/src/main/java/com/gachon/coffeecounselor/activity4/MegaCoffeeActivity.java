@@ -489,6 +489,7 @@ public class MegaCoffeeActivity extends AppCompatActivity {
                             infoTmp = info.text();
                             ratingTmp = rateBar.getRating();
                             rate = Float.toString(ratingTmp);
+                            recipeTmp = getResources().getIdentifier("@drawable/strawberrylatte","drawable", "com.gachon.coffeecounselor");
                             break;
                         case  1020 :
                             doc = Jsoup.connect("http://www.megacoffee.me/bbs/content.php?co_id=menu10").get();
