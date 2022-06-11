@@ -25,4 +25,6 @@ Cafe menus are updated with Crawling.
 // Recommending logic incomplete yet.
 // Firebase realtime DB linked, but not in use yet.
 
-
+22/06/11
+// Seems to have issue on crawling.
+// java.lang.IllegalArgumentException: Path must not be empty.
