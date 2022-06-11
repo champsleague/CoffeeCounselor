@@ -1,25 +1,33 @@
+
+
+// "plugins" syntax
 plugins {
     id 'com.android.application'
+    id 'com.chaquo.python'
 }
+
+// "apply" syntax
+apply plugin: 'com.android.application'
+apply plugin: 'com.chaquo.python'
 
 android {
     compileSdk 32
 
     sourceSets{
-        main{
-            java{
-                //exclude '**/Recommendation.java'
-                //exclude '**/PascucciBeverageFragment.java'
-                //exclude '**/PascucciCoffeeFragment.java'
-                //exclude '**/PascucciDessertFragment.java'
-                //exclude '**/PascucciTeaFragment.java'
-                //exclude '**/SubmitResult.java'
-            }
+        main {
+            python.srcDir "src/main/python"
         }
     }
 
 
     defaultConfig {
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+        python {
+            buildPython "C:\\Users\\chado\\clustering.py"
+        }
         applicationId "com.gachon.coffeecounselor"
         minSdk 21
         targetSdk 32
