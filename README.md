@@ -92,3 +92,39 @@ within various choices
 * fragment_pascucci_~ - fragment activity layout about pascucci coffee  
 * activity_menu - basic menu layout page  
 * activity_cafeinfo - layout page of cafe information
+------------------------------
+
+### Used technologies
+* Contents learned through Mobile Programming Course + alpha
+* Layout  design (setting), button function setting, graphic / multimedia utilization
+* Crawling websites, database construction (Firebase)
+* Networking function construction
+
+
+### Part of members
+* 차원우 (Code implement, Error detection, crawling)  
+design the layout and the page of each screen (page#3: tablayout, merging tab, scroll view)  
+implement each page and fix some errors and malfunctions  
+played a role for crawling the websites
+
+
+* 홍윤기 (Code implement, Design, crawling, manage)  
+design the layout and the page of each screen (page#1,2: front design, table layout)  
+design layout setting, button function setting, graphics  
+implemented and fixed the error of the crawling  
+managed the whole construction  
+
+
+* 권우혁 (Code implement, Firebase, Network)  
+design the layout and the page of each screen (page #3: scroll view, menu layout)  
+design layout setting, button function setting & graphics  
+linked Firebase to Android Studio  
+constructed network  
+
+
+* 유경준 (Code implement, crawling, PPT)  
+design the layout and the page of each screen (page #5: swipe view, recommendation layout)   
+supported the part of the crawling websites  
+construct PPT  
+design implementation progress  
+
