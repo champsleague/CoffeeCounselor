@@ -3,19 +3,17 @@
 // "plugins" syntax
 plugins {
     id 'com.android.application'
-    id 'com.chaquo.python'
 }
 
 // "apply" syntax
 apply plugin: 'com.android.application'
-apply plugin: 'com.chaquo.python'
 
 android {
     compileSdk 32
 
     sourceSets{
         main {
-            python.srcDir "src/main/python"
+
         }
     }
 
@@ -25,9 +23,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
-        python {
-            buildPython "C:\\Users\\chado\\clustering.py"
-        }
+
         applicationId "com.gachon.coffeecounselor"
         minSdk 21
         targetSdk 32
@@ -53,6 +49,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.jjoe64:graphview:4.2.2'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.6'
     implementation platform('com.google.firebase:firebase-bom:30.0.1')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.squareup.picasso:picasso:2.71828'

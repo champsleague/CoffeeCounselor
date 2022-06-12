@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
 import com.gachon.coffeecounselor.R;
 
 import org.jsoup.Jsoup;
@@ -21,6 +19,8 @@ import java.io.IOException;
 
 //import com.bytecode.opencsv.CSVWriter; // Need to import CSVWriter (to save 2d array)
 // -> not working properly yet...
+import com.opencsv.CSVWriter;
+
 
 public class SubmitResult extends AppCompatActivity {
 
@@ -36,10 +36,10 @@ public class SubmitResult extends AppCompatActivity {
     String sugarTmp, caffeineTmp;
     int index;
     // arrays to save X:caffeine, Y=sugar
-    int[] X = new int[50];
-    int[] Y = new int[50];
-    int[][] data = new int[50][2];
-    int cnt = 0;
+    String[] X = new String[50];
+    String[] Y = new String[50];
+    String[][] data = new String[50][2];
+    int cnt1 = 0, cnt2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
@@ -67,7 +67,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -75,7 +75,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -83,7 +83,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq9 td table tbody tr td table tr[class=text13explain] td");
@@ -91,7 +91,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
 
@@ -111,7 +111,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -119,7 +119,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -127,7 +127,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -135,7 +135,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
 
@@ -146,7 +146,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -154,7 +154,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -162,7 +162,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -170,7 +170,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq4 td table tbody tr td table tr[class=text13explain] td");
@@ -178,7 +178,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq5 td table tbody tr td table tr[class=text13explain] td");
@@ -186,7 +186,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq6 td table tbody tr td table tr[class=text13explain] td");
@@ -194,7 +194,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -202,7 +202,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -210,7 +210,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq9 td table tbody tr td table tr[class=text13explain] td");
@@ -218,7 +218,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
@@ -226,7 +226,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
 
@@ -237,7 +237,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq1 td table tbody tr td table tr[class=text13explain] td");
@@ -245,7 +245,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq2 td table tbody tr td table tr[class=text13explain] td");
@@ -253,7 +253,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq3 td table tbody tr td table tr[class=text13explain] td");
@@ -261,7 +261,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq7 td table tbody tr td table tr[class=text13explain] td");
@@ -269,7 +269,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq8 td table tbody tr td table tr[class=text13explain] td");
@@ -277,7 +277,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq9 td table tbody tr td table tr[class=text13explain] td");
@@ -285,7 +285,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq10 td table tbody tr td table tr[class=text13explain] td");
@@ -293,7 +293,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq11 td table tbody tr td table tr[class=text13explain] td");
@@ -301,7 +301,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq12 td table tbody tr td table tr[class=text13explain] td");
@@ -309,7 +309,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq13 td table tbody tr td table tr[class=text13explain] td");
@@ -317,7 +317,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
                     Nutrition = doc.select("tr#faq14 td table tbody tr td table tr[class=text13explain] td");
@@ -325,7 +325,7 @@ public class SubmitResult extends AppCompatActivity {
                     for(Element nutrition : Nutrition){
                         if(index == 7)  sugarTmp = nutrition.text(); sugarTmp = sugarTmp.substring(0,-2);
                         if(index == 11)  caffeineTmp = nutrition.text(); caffeineTmp = caffeineTmp.substring(0,-3);
-                        X[cnt++] = Integer.parseInt(caffeineTmp); Y[cnt++] = Integer.parseInt(sugarTmp);
+                        X[cnt1++] = caffeineTmp; Y[cnt2++] = sugarTmp;
                         index += 1;
                     }
 
@@ -365,12 +365,21 @@ public class SubmitResult extends AppCompatActivity {
                     int userSugar = intent.getIntExtra("userSugar", 0);
                     int userCaffeine = intent.getIntExtra("userCaffeine", 0);
 
+                    // write data using CSVWriter
+                    CSVWriter writer = new CSVWriter(new FileWriter("./sample.csv"));
+                    String[] entries1 = {Integer.toString(userSugar), Integer.toString(userCaffeine)};
+                    writer.writeNext(entries1);
+
+                    writer.close();
+
+                    /*
                     for(int j=0;j<2;j++){
                         for(int i=0;i<X.length;j++){
                             if(j==0) data[i][j] = X[i];
                             if(j==1) data[i][j] = Y[i];
                         }
                     }
+                    */
 
                     //exportDataToExcel("C:\\Users\\chado\\clustering.csv", data);
 
@@ -385,6 +394,7 @@ public class SubmitResult extends AppCompatActivity {
 
 
     }
+
 
     /*
     public static void exportDataToExcel(String fileName, int[][] data) throws FileNotFoundException, IOException
@@ -411,7 +421,7 @@ public class SubmitResult extends AppCompatActivity {
         csvWriter.flush();
         csvWriter.close();
     }
-
     */
+
 
 }
