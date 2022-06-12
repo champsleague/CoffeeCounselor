@@ -4,7 +4,7 @@ Coffee recommend mobile application
 Target cafe
 -Starbucks
 -Megacoffee
--Atwosome coffee
+-A Twosome coffee
 -Ediya coffee
 -Pascucci
 
