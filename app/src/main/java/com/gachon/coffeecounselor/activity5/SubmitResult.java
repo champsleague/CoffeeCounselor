@@ -24,12 +24,6 @@ import com.opencsv.CSVWriter;
 
 public class SubmitResult extends AppCompatActivity {
 
-    /*
-    // executing python file from java -> not working properly yet...
-    if (!Python.isStarted()){
-        Python.start(new AndroidPlatform());
-    }
-    */
 
     Document doc;
     Elements Nutrition;
@@ -38,7 +32,6 @@ public class SubmitResult extends AppCompatActivity {
     // arrays to save X:caffeine, Y=sugar
     String[] X = new String[50];
     String[] Y = new String[50];
-    String[][] data = new String[50][2];
     int cnt1 = 0, cnt2 = 0;
 
     @Override
@@ -365,25 +358,23 @@ public class SubmitResult extends AppCompatActivity {
                     int userSugar = intent.getIntExtra("userSugar", 0);
                     int userCaffeine = intent.getIntExtra("userCaffeine", 0);
 
-                    // write data using CSVWriter
+                    // write user data using CSVWriter
                     CSVWriter writer = new CSVWriter(new FileWriter("./sample.csv"));
+                    String[] entries0 = {"userSugar", "userCaffeine"};
+                    writer.writeNext(entries0);
                     String[] entries1 = {Integer.toString(userSugar), Integer.toString(userCaffeine)};
                     writer.writeNext(entries1);
 
-                    writer.close();
-
-                    /*
-                    for(int j=0;j<2;j++){
-                        for(int i=0;i<X.length;j++){
-                            if(j==0) data[i][j] = X[i];
-                            if(j==1) data[i][j] = Y[i];
-                        }
+                    // write data using CSVWriter
+                    String[] entries2 = {"sugar", "caffeine"};
+                    writer.writeNext(entries2);
+                    for(int i=0;i<X.length;i++){
+                        String[] entries3 = {X[i], Y[i]};
+                        writer.writeNext(entries3);
                     }
-                    */
-
-                    //exportDataToExcel("C:\\Users\\chado\\clustering.csv", data);
 
 
+                    writer.close();
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -396,32 +387,6 @@ public class SubmitResult extends AppCompatActivity {
     }
 
 
-    /*
-    public static void exportDataToExcel(String fileName, int[][] data) throws FileNotFoundException, IOException
-    {
-        File file = new File(fileName);
-        if (!file.isFile())
-            file.createNewFile();
-
-        CSVWriter csvWriter = new CSVWriter(new FileWriter(file));
-
-        int rowCount = data.length;
-
-        for (int i = 0; i < rowCount; i++)
-        {
-            int columnCount = data[i].length;
-            String[] values = new String[columnCount];
-            for (int j = 0; j < columnCount; j++)
-            {
-                values[j] = data[i][j] + "";
-            }
-            csvWriter.writeNext(values);
-        }
-
-        csvWriter.flush();
-        csvWriter.close();
-    }
-    */
 
 
 }
