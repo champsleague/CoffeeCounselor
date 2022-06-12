@@ -1,20 +1,20 @@
-# CoffeeCouncelor
+# CoffeeCounselor
 Coffee recommend mobile application
 
-Target cafe
+### Target cafe
 -Starbucks
 -Megacoffee
 -A Twosome coffee
 -Ediya coffee
 -Pascucci
 
-Target menu category
+### Target menu category
 -Coffee
 -Beverage
 -Tea
 -Dessert
 
-Target info.
+### Target info.
 -Menu name
 -Menu Image
 -Menu description
@@ -25,6 +25,7 @@ Cafe menus are updated with Crawling.
 // Recommending logic incomplete yet.
 // Firebase realtime DB linked, but not in use yet.
 
-22/06/11
-// Seems to have issue on crawling.
-// java.lang.IllegalArgumentException: Path must not be empty.
+
+
+### Example screenshots
+
