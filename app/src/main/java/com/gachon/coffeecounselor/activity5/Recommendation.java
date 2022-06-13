@@ -92,6 +92,7 @@ public class Recommendation extends AppCompatActivity {
                 bundle1.putInt("userSugar", sugar);
                 bundle1.putInt("userCaffeine", caffeine);
                 intent.putExtras(bundle1);
+                startActivity(intent);
 
             }
         });

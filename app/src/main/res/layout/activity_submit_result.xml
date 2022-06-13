@@ -5,12 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
-    <!--graph view to display our graph-->
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/idGraphView"
+    // show python file executing
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="@string/python"
+        android:background="#ff993300"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
 
 </LinearLayout>

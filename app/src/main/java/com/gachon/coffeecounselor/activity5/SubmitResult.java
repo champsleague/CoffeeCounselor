@@ -24,7 +24,7 @@ import com.opencsv.CSVWriter;
 
 public class SubmitResult extends AppCompatActivity {
 
-
+    Intent intent;
     Document doc;
     Elements Nutrition;
     String sugarTmp, caffeineTmp;
@@ -354,25 +354,23 @@ public class SubmitResult extends AppCompatActivity {
 
 
                     // get appropriate userSugar, userCaffeine value from Recommendation class
-                    Intent intent = getIntent();
+                    intent = getIntent();
                     int userSugar = intent.getIntExtra("userSugar", 0);
                     int userCaffeine = intent.getIntExtra("userCaffeine", 0);
 
-                    // write user data using CSVWriter
                     CSVWriter writer = new CSVWriter(new FileWriter("./sample.csv"));
-                    String[] entries0 = {"userSugar", "userCaffeine"};
-                    writer.writeNext(entries0);
-                    String[] entries1 = {Integer.toString(userSugar), Integer.toString(userCaffeine)};
-                    writer.writeNext(entries1);
 
                     // write data using CSVWriter
-                    String[] entries2 = {"sugar", "caffeine"};
-                    writer.writeNext(entries2);
+                    String[] entries0 = {"sugar", "caffeine"};
+                    writer.writeNext(entries0);
                     for(int i=0;i<X.length;i++){
-                        String[] entries3 = {X[i], Y[i]};
-                        writer.writeNext(entries3);
+                        String[] entries1 = {X[i], Y[i]};
+                        writer.writeNext(entries1);
                     }
 
+                    // write user data using CSVWriter
+                    String[] entries2 = {Integer.toString(userSugar), Integer.toString(userCaffeine)};
+                    writer.writeNext(entries2);
 
                     writer.close();
 

@@ -44,5 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button enterPrefer = findViewById(R.id.button3);
+        enterPrefer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Recommendation.class);
+                intent.putExtra("code",1);
+                startActivity(intent);
+            }
+        });
     }
 }

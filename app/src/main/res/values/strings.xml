@@ -8,4 +8,5 @@
     <string name="age">Select Age</string>
     <string name="gender">Select Gender</string>
     <string name="feeling">Select Your Feeling</string>
+    <string name="python">SHOWING Python File</string>
 </resources>
