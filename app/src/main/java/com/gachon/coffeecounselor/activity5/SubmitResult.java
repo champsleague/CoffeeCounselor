@@ -17,8 +17,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
-//import com.bytecode.opencsv.CSVWriter; // Need to import CSVWriter (to save 2d array)
-// -> not working properly yet...
 import com.opencsv.CSVWriter;
 
 
@@ -358,7 +356,7 @@ public class SubmitResult extends AppCompatActivity {
                     int userSugar = intent.getIntExtra("userSugar", 0);
                     int userCaffeine = intent.getIntExtra("userCaffeine", 0);
 
-                    CSVWriter writer = new CSVWriter(new FileWriter("./sample.csv"));
+                    CSVWriter writer = new CSVWriter(new FileWriter("C:\\Users\\chado\\sample.csv"));
 
                     // write data using CSVWriter
                     String[] entries0 = {"sugar", "caffeine"};
