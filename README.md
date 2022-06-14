@@ -123,8 +123,8 @@ constructed network
 
 
 * 유경준 (Code implement, crawling, PPT)  
-design the layout and the page of each screen (page #5: swipe view, recommendation layout)   
+design the layout and the page of each screen (page #5: recommendation layout)   
 supported the part of the crawling websites  
-construct PPT  
+construct PPT, github readme
 design implementation progress  
 
